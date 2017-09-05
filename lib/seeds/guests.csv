@@ -1,4 +1,6 @@
 password,password _confirmation,Is_kid,Firstname,Lastname,Group
+GCBPW,GCBPW,no,Isis,Press,1
+GCBPW,GCBPW,no,Evan,Press,1
 GCBPW,GCBPW,no,Sarah,Press,1
 GCBPW,GCBPW,no,Kenny,Jenkins,1
 GCBPW,GCBPW,yes,Hailey,Jenkins,1
