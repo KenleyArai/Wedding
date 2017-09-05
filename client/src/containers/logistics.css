@@ -1,0 +1,30 @@
+#map {
+    position:absolute; 
+    top: 4em; 
+    bottom:0; 
+    width:100%;
+    display: flex;
+}
+
+#map-page {
+
+}
+
+
+#address-container {
+    background-color: rgba(185,204,184, 1.0);
+    padding: 2em;
+}
+
+#address-location {
+    padding: 2em;
+    background-color: rgba(125, 81, 109, 0.8);
+    display: flex;
+    position: absolute;
+    z-index: 1;
+    left: 18em;
+    top: 10em;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;   
+}

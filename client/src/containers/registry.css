@@ -1,0 +1,88 @@
+/* Mobile Styles */
+@media only screen and (max-width: 960px) {
+    
+        #registry-page {
+            width: 100%;
+            height: 100%;
+            background-image: none;
+            position: absolute;
+            justify-content: space-around;
+            align-content: center;
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(125, 81, 109, 1.0); /* Cosmic */;
+        }
+    
+        #registry-header {
+            font-size: 2em;
+            padding: .5em;
+            margin: .25em;
+            background-color: rgba(185,204,184, .8); /* Clay Ash */
+        }
+    
+        #registry-box {
+            margin-top: 2em;
+            margin-left: .5em;
+            border-style: solid;
+            border-width: .15em;
+            border-color: rgba(125, 81, 109, 1.0); /* Cosmic */
+            background-color: rgba(185,204,184, .25);
+            width: 25em;
+            text-align: center;
+        }  
+    
+        .registry-item {
+            border-style: solid;
+            border-width: .075em;
+            border-color: rgba(125, 81, 109, 1.0); /* Cosmic */
+            font-size: 2em;
+            padding: 1em;
+            margin: .5em;
+            background-color: rgba(185,204,184, .8); /* Clay Ash */
+        }
+    }
+    
+    /* Desktop Styles */
+    @media only screen and (min-width: 961px) {
+        #registry-page {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            background: url("../images/registry.jpg") no-repeat center center fixed; 
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            justify-content: space-around;
+            align-content: center;
+            display: flex;
+            flex-direction: row;
+        }
+    
+        #registry-header {
+            font-size: 3em;
+            padding: 1em;
+            margin: .5em;
+            background-color: rgba(185,204,184, .8); /* Clay Ash */
+        }
+    
+        #registry-box {
+            border-style: solid;
+            border-width: .15em;
+            border-color: rgba(125, 81, 109, 1.0); /* Cosmic */
+            background-color: rgba(185,204,184, .25);
+            width: 30em;
+            text-align: center;
+        }  
+    
+        .registry-item {
+            border-style: solid;
+            border-width: .075em;
+            border-color: rgba(125, 81, 109, 1.0); /* Cosmic */
+            font-size: 2em;
+            padding: 1em;
+            margin: .5em;
+            background-color: rgba(185,204,184, .8); /* Clay Ash */
+        }
+    
+    }

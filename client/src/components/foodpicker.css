@@ -1,0 +1,13 @@
+#food-picker {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 58em;
+    background-color: rgba(185,204,184, .8);
+}
+
+.food-header {
+    font-size: 1.5em;
+}
+
+.food-box {
+    padding: .25em;
+}

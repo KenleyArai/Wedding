@@ -1,0 +1,42 @@
+*, *:before, *:after{
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+-webkit-box-sizing: border-box;
+}
+
+html, body
+{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  color: #7D516D;
+  font-family: 'Dancing Script', cursive;
+}
+
+a {
+  text-decoration: none;
+  color: #7D516D;
+}
+
+a:hover {
+  color: rgb(138, 234, 146); /* Success color */
+}
+
+body {
+    font-size:16px;
+    font-kerning: auto;
+    color: rgb(94, 61, 82); /* Cosmic Dark */
+    font-family: 'Dancing Script', cursive;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 960px) {
+  body {
+    background-color: #B9CCB8;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+}

@@ -1,0 +1,44 @@
+.two-options {
+    font-family: 'Source Sans Pro', sans-serif;
+    width: 57em;
+}
+
+.two-cell {
+    text-align: center;
+}
+
+.two-cell.Steak,
+.two-cell.Salmon,
+.two-cell.Carrot.Cake,
+.two-cell.Chocolate.Cake {
+    width: 15em;
+    text-align: center;
+    background-color: #fff;
+}
+
+.two-cell.Steak:hover,
+.two-cell.Salmon:hover,
+.two-cell.Carrot.Cake:hover,
+.two-cell.Chocolate.Cake:hover {
+    background-color: #00CC66;
+    width: 15em;
+    text-align: center;
+}
+
+.two-cell.Steak.active,
+.two-cell.Salmon.active,
+.two-cell.Carrot.active,
+.two-cell.Chocolate.Cake.active {
+    width: 15em;
+    text-align: center;
+    background-color: #00CC66;
+}
+
+.two-cell.Steak.not-active,
+.two-cell.Salmon.not-active,
+.two-cell.Carrot.not-active,
+.two-cell.Chocolate.Cake.not-active {
+    width: 15em;
+    text-align: center;
+    background-color: #CD5334;
+}
