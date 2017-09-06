@@ -34,13 +34,19 @@ export default class RsvpForm extends Component {
   }
 
   componentDidMount() {
+    var clock = 0
     this.timerID = setInterval(
-      () => this.get_guest(),
+      () => this.get_guest(clock++, 9000),
       210
     );
   }
 
-  get_guest() {
+  get_guest(interval, session_end) {
+ 
+    if(!(interval % session_end)){
+      this.all_done
+    }
+
     if(this.state.auth_token && this.state.invitee != undefined) {
       const url = `/group/${this.state.invitee.gid.replace(' ', '%20')}`
       const headers = {'Authorization': this.state.auth_token };
@@ -170,7 +176,7 @@ export default class RsvpForm extends Component {
                 <span>
                   <FoodPicker token={this.state.auth_token} group={this.state.group.filter(function(member) {return member.is_kid === 'no'})} /> 
                   <div onClick={this.okay_next} id='done'>
-                    Click here to finish!
+                    Click here! Only one more step!
                   </div>
                 </span> : null
   }
@@ -180,14 +186,14 @@ export default class RsvpForm extends Component {
   }
 
   all_done() {
-    this.setState({food_choices: false, invitee: null, group: null, done: true, auth_token: undefined})
+    this.setState({song_state:false, food_choices: false, invitee: null, group: null, done: true, auth_token: undefined})
   }
 
   song_state() {
     return this.state.song_state ? 
                 <div>
                   <Song userid={this.state.invitee.id} token={this.state.auth_token} group={ this.state.group }/>
-                  <div onClick={this.okay_next} id='done'>
+                  <div onClick={this.all_done} id='done'>
                       Click here to finish!
                   </div>
                 </div>
