@@ -185,7 +185,12 @@ export default class RsvpForm extends Component {
 
   song_state() {
     return this.state.song_state ? 
-                <Song userid={this.state.invitee.id} token={this.state.auth_token} group={ this.state.group }/>
+                <div>
+                  <Song userid={this.state.invitee.id} token={this.state.auth_token} group={ this.state.group }/>
+                  <div onClick={this.okay_next} id='done'>
+                      Click here to finish!
+                  </div>
+                </div>
               : null
   }
 
