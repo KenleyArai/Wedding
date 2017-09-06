@@ -110,7 +110,7 @@ export default class RsvpForm extends Component {
   }
 
     notPartyOnClick(event) {
-      this.setState({ auth_token: '', name: '', password: '', invitee: undefined, is_correct_party: 0, food_choices: false, done: false, go_next:false, group:false})
+      this.setState({ group:undefined, auth_token: '', name: '', password: '', invitee: undefined, is_correct_party: 0, food_choices: false, done: false, go_next:false, group:false})
     }
   
   isPartyOnClick(event) {
