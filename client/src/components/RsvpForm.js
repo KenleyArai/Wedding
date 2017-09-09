@@ -137,7 +137,7 @@ export default class RsvpForm extends Component {
             content={this.state.password}
             placeholder={'Password...'} />
             <div id='login-helper'><i className="fa fa-question-circle" aria-hidden="true"></i>Your passcode is on your invitation!</div>
-        <button id='submit' className='bnext' type="submit" value="Submit">
+        <button id='submit' className='bnext sliding-middle-out' type="submit" value="Submit">
               Submit  <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
           </button>
       </div>
@@ -169,7 +169,7 @@ export default class RsvpForm extends Component {
       <div id='attending-check'>
         <em className='headers'>Can you let us know who is attending?</em>
         <AttendingList party={ this.state.group } userid={this.state.invitee.id} token={ this.state.auth_token }/>
-        <div className='bnext' onClick={this.attending_helper}>Next <i className="fa fa-arrow-circle-right" aria-hidden="true"></i></div>
+        <div className='bnext sliding-middle-out' onClick={this.attending_helper}>Next <i className="fa fa-arrow-circle-right" aria-hidden="true"></i></div>
       </div>
     ) : null;
   }
@@ -178,7 +178,7 @@ export default class RsvpForm extends Component {
     return this.state.food_choices ? 
                 <span>
                   <FoodPicker token={this.state.auth_token} group={this.state.group.filter(function(member) {return member.is_kid === 'no'})} /> 
-                  <div className='bnext' onClick={this.okay_next} id='done'>
+                  <div className='bnext sliding-middle-out' onClick={this.okay_next} id='done'>
                     Click here! Only one more step! <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
                   </div>
                 </span> : null
@@ -197,7 +197,7 @@ export default class RsvpForm extends Component {
                 <div id='song-box'>
                   <div className='headers-song'>Last question! can you tell us if...</div>
                   <Song userid={this.state.invitee.id} token={this.state.auth_token} group={ this.state.group }/>
-                  <div onClick={this.all_done} id='done'>
+                  <div onClick={this.all_done} classname='sliding-middle-out' id='done'>
                       Click here to finish! <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
                   </div>
                 </div>

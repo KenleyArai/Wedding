@@ -1,3 +1,25 @@
+
+.sliding-middle-out {
+    display: inline-block;
+    position: relative;
+}
+
+.sliding-middle-out:after {
+    content: '';
+    display: block;
+    margin: auto;
+    margin-top: 5px;
+    height: .3rem;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+.sliding-middle-out:hover:after {
+    width: 100%;
+    background: #2A0410;
+}
+
 /* Mobile Styles */
 @media only screen 
 and (max-device-width: 736px) 
@@ -43,7 +65,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
         font-size: .75rem;
     }
 
-    input#submit{
+    #submit{
         background:none;
         border:none;
         font-size:1em;
