@@ -20,10 +20,7 @@ export default class App extends React.Component {
         return (
           <Router>
             <div>
-              <MediaQuery minWidth={960}>
-                <Navbar logo={<span>K &amp; L</span>} />
-              </MediaQuery>
-          
+              <Navbar logo={ <span id='nav-logo'>K &amp; L</span>} />
               <Route exact path="/" component={HomePage}/>
               <Route exact path="/RSVP" component={RsvpPage} />
               <Route exact path="/Registry" component={RegistryPage}/>

@@ -10,7 +10,13 @@
 /* Mobile Styles */
 @media only screen and (max-width: 960px) {
     #links {
-        display: none;
+        margin-top: 1rem;
+        margin-left: -175px;
+        box-sizing: border-box;
+        display: block;
+    }
+    .menu-link {
+        margin-left: 10px;
     }
 }
 
