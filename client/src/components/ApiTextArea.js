@@ -35,7 +35,7 @@ export default class ApiTextArea extends React.Component {
    
     render() {
         return (
-            <div id="ApiTextArea">
+            <div className="ApiTextArea">
                 <TextArea
                     inputType={this.props.inputType}
                     title={ this.props.title }

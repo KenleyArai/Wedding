@@ -29,24 +29,4 @@ ActiveRecord::Schema.define(version: 20170904063929) do
     t.string "gid"
   end
 
-  create_table "meals", force: :cascade do |t|
-    t.string "dinner"
-    t.string "dessert"
-    t.string "allergies"
-    t.string "created_by"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
-
-  create_table "users", force: :cascade do |t|
-    t.string "firstname"
-    t.string "lastname"
-    t.string "attending"
-    t.string "song"
-    t.string "password_digest"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "group_id"
-  end
-
 end

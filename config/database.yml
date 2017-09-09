@@ -80,6 +80,7 @@ test:
 #
 production:
   <<: *default
-  database: wedding-api_production
-  username: wedding-api
-  password: <%= ENV['WEDDING-API_DATABASE_PASSWORD'] %>
+  url: <%= ENV['DATABASE_URL'] %>
+  database: d94qo5da7567ec
+  username: xkfmqdwhxojtfn
+  password: <%= ENV['DATABASE_PASSWORD'] %>

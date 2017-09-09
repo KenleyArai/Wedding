@@ -1,0 +1,64 @@
+/* Mobile Styles */
+@media only screen 
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+    .sa-headers {
+        font-size: 1rem;
+    }
+    .song-and-allergy {
+        display: flex;
+        justify-content: space-around;
+        border-radius: 5px;
+        background: #B9CCB8;
+        padding: .25rem;
+        margin: 1rem auto;
+        
+    }
+    .headers-song {
+        color: #B9CCB8;
+    }
+    .ApiTextArea {
+        width: 2rem;
+    }
+
+    .form-input {
+        width: 3rem;
+        margin: .2rem;
+    }
+
+}
+
+/* Desktop Styles */
+@media screen 
+and (min-device-width: 737px) { 
+    .sa-headers {
+        font-size: 1rem;
+    }
+    .song-and-allergy {
+        box-sizing: border-box;
+        display: flex;
+        width: 80%;
+        justify-content: space-between;
+        border-radius: 5px;
+        background: #B9CCB8;
+        padding: .25rem;
+        margin: 1rem auto;
+    }
+    
+    .headers-song {
+        color: #B9CCB8;
+    }
+    .ApiTextArea {
+        width: 2rem;
+        display: flex;
+        margin-right: 0;
+    }
+
+    .form-input {
+        box-sizing: border-box;
+        width: 12rem;
+        margin-right: auto;
+        margin-left: -10rem;
+    }
+}

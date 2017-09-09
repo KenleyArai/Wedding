@@ -10,7 +10,7 @@ export default class RsvpForm extends Component {
 
   constructor() {
       super();
-      this.state = { auth_token: '', name: '', password: '', song_state: false, invitee: undefined, is_correct_party: 0, food_choices: false, done: false, go_next:false, group:false};
+      this.state = { attending_state: true, auth_token: '', name: '', password: '', song_state: false, invitee: undefined, is_correct_party: 0, food_choices: false, done: false, go_next:false, group:false};
 
       this.nameChange = this.nameChange.bind(this);
       this.passwordChange = this.passwordChange.bind(this);
@@ -121,22 +121,25 @@ export default class RsvpForm extends Component {
   form() {
     return !this.state.invitee ? (
       <div id='initial-form'>
-        <em className='headers'>Welcome, please enter your name!</em>
+        <em className='headers'>Hi, to RSVP please login!</em>
         <SingleInput
             inputType={'text'}
             title={''}
-            name={'field1'}
+            name={'name-input'}
             controlFunc={this.nameChange}
             content={this.state.name}
             placeholder={'Name...'} />
         <SingleInput
             inputType={'text'}
             title={''}
-            name={'field2'}
+            name={'pass-input'}
             controlFunc={this.passwordChange}
             content={this.state.password}
             placeholder={'Password...'} />
-        <input type="submit" value="Submit" />
+            <div id='login-helper'><i className="fa fa-question-circle" aria-hidden="true"></i>Your passcode is on your invitation!</div>
+        <button id='submit' className='bnext' type="submit" value="Submit">
+              Submit  <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
+          </button>
       </div>
     ) 
     : null
@@ -162,11 +165,11 @@ export default class RsvpForm extends Component {
   }
 
   attending() {
-    return this.state.is_correct_party && !this.state.food_choices ? (
+    return this.state.group && this.state.attending_state && !this.state.food_choices ? (
       <div id='attending-check'>
         <em className='headers'>Can you let us know who is attending?</em>
         <AttendingList party={ this.state.group } userid={this.state.invitee.id} token={ this.state.auth_token }/>
-        <div id='next' onClick={this.attending_helper}>Next</div>
+        <div className='bnext' onClick={this.attending_helper}>Next <i className="fa fa-arrow-circle-right" aria-hidden="true"></i></div>
       </div>
     ) : null;
   }
@@ -175,26 +178,27 @@ export default class RsvpForm extends Component {
     return this.state.food_choices ? 
                 <span>
                   <FoodPicker token={this.state.auth_token} group={this.state.group.filter(function(member) {return member.is_kid === 'no'})} /> 
-                  <div onClick={this.okay_next} id='done'>
-                    Click here! Only one more step!
+                  <div className='bnext' onClick={this.okay_next} id='done'>
+                    Click here! Only one more step! <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
                   </div>
                 </span> : null
   }
 
   okay_next() {
-    this.setState({food_choices: false, song_state: true})
+    this.setState({ attending_state:false, food_choices: false, song_state: true})
   }
 
   all_done() {
-    this.setState({song_state:false, food_choices: false, invitee: null, group: null, done: true, auth_token: undefined})
+    this.setState({song_state:false, food_choices: false, invitee: null, group: null, done: true, auth_token: undefined, attending_state:true})
   }
 
   song_state() {
-    return this.state.song_state ? 
-                <div>
+    return this.state.song_state && !this.state.attending_state ? 
+                <div id='song-box'>
+                  <div className='headers-song'>Last question! can you tell us if...</div>
                   <Song userid={this.state.invitee.id} token={this.state.auth_token} group={ this.state.group }/>
                   <div onClick={this.all_done} id='done'>
-                      Click here to finish!
+                      Click here to finish! <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
                   </div>
                 </div>
               : null
@@ -204,7 +208,6 @@ export default class RsvpForm extends Component {
     return (
       <form id='rsvp-form' onSubmit={this.handleSubmit}>
         { this.form() }
-        { this.party() }
         { this.attending() }
         { this.food_pick() }
         { this.song_state() }

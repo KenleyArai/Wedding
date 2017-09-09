@@ -25,7 +25,9 @@ csv.each do |row|
         :password_confirmation  => row['password_confirmation'],
         :gid                    => row['Group'],
         :is_kid                 => row['Is_kid'],
-        :attending              => 'unknown'
+        :attending              => 'unknown',
+        :song_request           => 'Do they have a song request?',
+        :allergy                => 'Do they have have any food allergies or dietary restrictions?'
     )
     guest.save!
 end

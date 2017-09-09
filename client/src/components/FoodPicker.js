@@ -7,11 +7,15 @@ export default class FoodPicker extends Component {
   render() {
     return (
       <div id='food-picker'>
-        { this.props.group.map( member => <div className='food-box'>
-                                            <em className='food-header'>What would {member.name.split(" ")[0]} prefer to eat?</em>
+        <div id='food-picker-header'>Can you let us know what the guests would like to eat?</div>
+          <div id='food-container'>
+        { this.props.group.map( member => member.attending == 'yes' ? <div className='food-box'>
+                                            <em className='food-header'>{member.name.split(" ")[0]}</em>
                                             <TwoOptions memid={member.id} chosen={member.entree} type={'?entree='} uri={'wants_for_dinner'} op1={'Steak'} op2={'Salmon'} token={this.props.token} />
                                             <TwoOptions memid={member.id} chosen={member.dessert} type={'?dessert='} uri={'wants_cake'} op1={'Carrot Cake'} op2={'Chocolate Cake'} token={this.props.token} />
-                                          </div> ) }
+                                          </div>: null ) }
+          <div className='info'><i className="fa fa-question-circle" aria-hidden="true"></i> Kids don't have a choice!</div>
+        </div>
       </div>
     );
   }

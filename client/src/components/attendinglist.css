@@ -1,11 +1,25 @@
-#attending {
-    width: 57em;
+/* Mobile Styles */
+@media only screen 
+and (min-device-width: 414px) 
+and (max-device-width: 736px) 
+and (-webkit-min-device-pixel-ratio: 3) { 
+    #attending {
+        width: 80%;
+        background-color: rgba(125, 81, 109, 1.0);
+        margin: 0 auto;
+        border-radius: 3px;
+        padding: 1rem;
+    }
 }
 
-.fa-check-square {
-    color: #00CC66;
-}
-
-.fa-window-close {
-    color: #CD5334;
+/* Desktop Styles */
+@media screen 
+and (min-device-width: 737px) { 
+    #attending {
+        width: 80%;
+        background-color: rgba(125, 81, 109, 1.0);
+        margin: 0 auto;
+        border-radius: 3px;
+        padding: 1rem;
+    }
 }
