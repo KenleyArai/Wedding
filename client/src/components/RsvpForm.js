@@ -123,21 +123,19 @@ export default class RsvpForm extends Component {
       <div id='initial-form'>
         <em className='headers'>Hi, to RSVP please login!</em>
         <SingleInput
-            err = {this.state.status}
             inputType={'text'}
-            title={''}
+            title={ this.state.status ? <div>Fullname <div className='error'><i className="fa fa-exclamation" aria-hidden="true"></i>: Either your name or password was not recognized! Double check the code on the invitation you got in the mail please!</div></div>: 'Fullname'}
             name={'name-input'}
             controlFunc={this.nameChange}
             content={this.state.name}
-            placeholder={'Name...'} />
+            placeholder={'...'} />
         <SingleInput
-            err = {this.state.status}
             inputType={'text'}
-            title={''}
+            title={'Password'}
             name={'pass-input'}
             controlFunc={this.passwordChange}
             content={this.state.password}
-            placeholder={'Password...'} />
+            placeholder={'...'} />
             <div id='login-helper'><i className="fa fa-question-circle" aria-hidden="true"></i>Your passcode is on your invitation!</div>
         <button id='submit' className='bnext sliding-middle-out' type="submit" value="Submit">
               Submit  <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
@@ -191,7 +189,7 @@ export default class RsvpForm extends Component {
   }
 
   all_done() {
-    this.setState({song_state:false, food_choices: false, invitee: null, group: null, done: true, auth_token: undefined, attending_state:true})
+    this.setState({attending_state:false,song_state:false, food_choices: false, invitee: null, group: null, done: true, auth_token: undefined, attending_state:true})
   }
 
   song_state() {
