@@ -601,12 +601,20 @@ button.rbc-input::-moz-focus-inner {
     #dates-page {
         width: 100%;
         height: 100%;
-        position: absolute;
-        background: url("../images/dates.jpg") no-repeat center center fixed; 
+        position: absolute; 
         -webkit-background-size: cover;
         -moz-background-size: cover;
         -o-background-size: cover;
         background-size: cover;
+    }
+
+    #dates-container {
+      position: relative;
+      margin: 0 auto;
+      margin-top: -50%;
+      width: 80%;
+      height: 80%;
+      z-index: 4;
     }
 
     #content {

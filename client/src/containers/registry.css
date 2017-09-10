@@ -47,16 +47,17 @@
         #registry-page {
             width: 100%;
             height: 100%;
-            position: absolute;
-            background: url("../images/registry.jpg") no-repeat center center fixed; 
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            justify-content: space-around;
-            align-content: center;
+            position: absolute;    
+        }
+
+        #registry-container {
             display: flex;
-            flex-direction: row;
+            justify-content: space-around;
+            position: relative;
+            margin: 0 auto;
+            margin-top: -40%;
+            width: 80%;
+            z-index: 4;
         }
     
         #registry-header {
@@ -72,6 +73,7 @@
             border-color: rgba(125, 81, 109, 1.0); /* Cosmic */
             background-color: rgba(185,204,184, .25);
             width: 30em;
+            height: 30em;
             text-align: center;
         }  
     

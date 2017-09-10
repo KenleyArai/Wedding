@@ -95,8 +95,8 @@ export default class RsvpForm extends Component {
         });
 
         fetch(request)
-        .then((resp) => resp.json())
-        .then((data) => this.setState((prevState, props) => ({ auth_token: data['auth_token']})))
+        .then((resp) => resp.ok ? resp.json() : { auth_token: undefined, status: 'rejected' })
+        .then((data) => this.setState((prevState, props) => ({ auth_token: data['auth_token'], status: data['status']})))
 
         event.preventDefault();
   }
@@ -123,6 +123,7 @@ export default class RsvpForm extends Component {
       <div id='initial-form'>
         <em className='headers'>Hi, to RSVP please login!</em>
         <SingleInput
+            err = {this.state.status}
             inputType={'text'}
             title={''}
             name={'name-input'}
@@ -130,6 +131,7 @@ export default class RsvpForm extends Component {
             content={this.state.name}
             placeholder={'Name...'} />
         <SingleInput
+            err = {this.state.status}
             inputType={'text'}
             title={''}
             name={'pass-input'}

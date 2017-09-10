@@ -22,9 +22,11 @@
 @media only screen and (min-width: 961px) {
     #announcement-container {
         background-color: rgba(185,204,184, .7);
-        position: absolute;
         display: flex;
-        margin-top: 24em;
+        position: relative;
+        margin-top: -40%;
+        z-index: 4;
+        height: 50%;
         width: 100%;
         align-items: center;
         flex-direction: column;
