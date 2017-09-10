@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import RSVPForm from 'components/RsvpForm';
 import './rsvppage.css';
 
+import MediaQuery from 'react-responsive';
 import IronImg from 'components/IronImg';
 import image from '../images/rsvp-preload.jpg';
 
@@ -12,7 +13,9 @@ export default class RSVP extends Component {
   render() {
     return (
       <div id='rsvp-page'>
-           <IronImg srcPreload={image} srcLoaded={hdRsvpPageURL} />
+          <MediaQuery minWidth={961}>
+                <IronImg srcPreload={image} srcLoaded={hdRsvpPageURL} />
+          </MediaQuery>
            <RSVPForm api="/invitees" /> 
       </div>
     );

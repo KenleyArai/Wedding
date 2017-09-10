@@ -8,7 +8,7 @@ import events from './events';
 
 import IronImg from 'components/IronImg';
 import image from '../images/dates-preload.jpg';
-
+import MediaQuery from 'react-responsive';
 const hdHomePageURL = 'http://res.cloudinary.com/hknwrleem/image/upload/c_scale,w_1824/v1505072465/dates_aeenl9.jpg';
 
 BigCalendar.momentLocalizer(moment); // or globalizeLocalizer
@@ -17,7 +17,9 @@ export default class DatesPage extends Component {
     render() {
         return (
             <div id='dates-page'>
+            <MediaQuery minWidth={961}>
                 <IronImg srcPreload={image} srcLoaded={hdHomePageURL} />
+            </MediaQuery>
                 <div id='dates-container'>
                     <div id='calendar-month'>October</div>
                     <div id='calendar-container'>

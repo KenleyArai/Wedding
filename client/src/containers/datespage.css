@@ -584,6 +584,13 @@ button.rbc-input::-moz-focus-inner {
         background-image: none;
         position: absolute;
     }
+    #dates-container {
+      position: relative;
+      margin: 0 auto;
+      width: 80%;
+      height: 80%;
+      z-index: 4;
+    }
     #content {
         width: 100%;
         height: 100%;
