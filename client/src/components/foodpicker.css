@@ -41,9 +41,7 @@ and (-webkit-min-device-pixel-ratio: 3) {
 
 /* Desktop Styles */
 @media screen 
-and (min-device-width: 737px) 
-and (max-device-width: 1600px) 
-and (-webkit-min-device-pixel-ratio: 1) { 
+and (min-device-width: 737px) { 
     #food-picker {
         width: 100%;
         padding: 3rem;
