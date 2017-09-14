@@ -12,22 +12,45 @@
             flex-direction: column;
             background-color: rgba(125, 81, 109, 1.0); /* Cosmic */;
         }
+
+        .registry-container {
+            background-color: rgba(185,204,184, .8);
+            font-size: 3rem;
+            display: flex;
+            height: 10rem;
+            padding: 3rem;
+            border-radius: 10px;
+            justify-content: space-between;
+            position: relative;
+            margin: 0 auto;
+            margin-top: -40%;
+            width:90%;
+            z-index: 4;
+            box-shadow: .25rem .25rem .25rem #888888;
+        }
+
+        .registry-container:hover {
+            box-shadow: .5rem .5rem .5rem #888888;
+        }
+    
+        .registry-container:active {
+            box-shadow: .25rem .25rem .25rem #888888;
+        }
     
         #registry-header {
-            font-size: 2em;
-            padding: .5em;
-            margin: .25em;
+            font-size: 3em;
+            padding: 1em;
+            margin: .5em;
             background-color: rgba(185,204,184, .8); /* Clay Ash */
         }
     
         #registry-box {
-            margin-top: 2em;
-            margin-left: .5em;
             border-style: solid;
             border-width: .15em;
             border-color: rgba(125, 81, 109, 1.0); /* Cosmic */
             background-color: rgba(185,204,184, .25);
-            width: 25em;
+            width: 30em;
+            height: 30em;
             text-align: center;
         }  
     
@@ -50,14 +73,28 @@
             position: absolute;    
         }
 
-        #registry-container {
+        .registry-container {
+            background-color: rgba(185,204,184, .8);
+            font-size: 5rem;
             display: flex;
-            justify-content: space-around;
+            height: 10rem;
+            padding: 3rem;
+            border-radius: 10px;
+            justify-content: space-between;
             position: relative;
             margin: 0 auto;
             margin-top: -40%;
-            width: 80%;
+            width:25%;
             z-index: 4;
+            box-shadow: .25rem .25rem .25rem #888888;
+        }
+
+        .registry-container:hover {
+            box-shadow: .5rem .5rem .5rem #888888;
+        }
+    
+        .registry-container:active {
+            box-shadow: .25rem .25rem .25rem #888888;
         }
     
         #registry-header {

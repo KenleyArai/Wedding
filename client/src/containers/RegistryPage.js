@@ -16,6 +16,10 @@ export default class Registry extends Component {
           <MediaQuery minWidth={961}>
                 <IronImg srcPreload={image} srcLoaded={hdRsvpPageURL} />
           </MediaQuery>
+          <a href={'http://kenleylenaregistry.mydagsite.com/'}>
+          <div className='registry-container'>
+          <i className="fa fa-gift" aria-hidden="true"></i> Click here!
+          </div></a>
         </div>
     );
   }
