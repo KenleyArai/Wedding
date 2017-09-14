@@ -6,7 +6,27 @@
 /* Mobile Styles */
 @media only screen and (max-width: 960px) {
   #nav-bar {
+    margin-left: -4rem;
     height: 6em;
+  }
+  .menu-link {
+    padding: .25rem;
+    font-size: 1.25rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: .25rem;
+    margin-right: .25rem;
+    margin-bottom: .25rem;
+    height: 2rem;
+    box-shadow: .1rem .1rem .1rem #888888;
+  }
+
+  .menu-link:hover {
+    box-shadow: .2rem .2rem .2rem #888888;
+  }
+
+  .menu-link:active {
+    box-shadow: .1rem .1rem .1rem #888888;
   }
 }
 
@@ -19,5 +39,23 @@
     flex-direction: row;
     background-color: rgba(185,204,184, .7);
   }
-    
+  
+  .menu-link {
+    padding: .25rem;
+    text-align: center;
+    margin: 0 auto;
+    margin-left: .25rem;
+    margin-right: .25rem;
+    margin-bottom: .25rem;
+    height: 2rem;
+    box-shadow: .1rem .1rem .1rem #888888;
+  }
+
+  .menu-link:hover {
+    box-shadow: .2rem .2rem .2rem #888888;
+  }
+
+  .menu-link:active {
+    box-shadow: .1rem .1rem .1rem #888888;
+  }
 }

@@ -1,24 +1,4 @@
 
-.sliding-middle-out {
-    display: inline-block;
-    position: relative;
-}
-
-.sliding-middle-out:after {
-    content: '';
-    display: block;
-    margin: auto;
-    margin-top: 5px;
-    height: .3rem;
-    width: 0px;
-    background: transparent;
-    transition: width .5s ease, background-color .5s ease;
-}
-
-.sliding-middle-out:hover:after {
-    width: 100%;
-    background: #2A0410;
-}
 
 .error {
     font-family: 'Open Sans', sans-serif;
@@ -61,7 +41,8 @@ and (-webkit-min-device-pixel-ratio: 3) {
         display: block;
         margin: 0 auto;
         font-size: 1.25rem;
-        background: #768276;
+        color: #B9CCB8;
+        background: #7D516D;
         width: 15rem;
         text-align: center;
         padding: .5rem;
@@ -91,20 +72,22 @@ and (-webkit-min-device-pixel-ratio: 3) {
         border-radius: 5px;
         font-size: 1rem;
     }
-
-    .bnext:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0%;
-        border-bottom: 2px solid #3366FF;
-        transition: 0.4s;
+    #submit{
+        box-shadow: .25rem .25rem .25rem #888888;
+        height: 3rem;
+        background:#7D516D;
+        color:#B9CCB8;
+        border:none;
+        font-size:1em;
     }
 
-    .bnext:hover:after {
-        width: 100%;
-      }
+    #submit:hover {
+        box-shadow: .5rem .5rem .5rem #888888;
+    }
+
+    #submit:active {
+        box-shadow: .25rem .25rem .25rem #888888;
+    }
 
     #attending-check {
         background-color: #B9CCB8;
@@ -135,7 +118,7 @@ and (min-device-width: 737px) {
     #rsvp-form {
         position: relative;
         margin: 0 auto;
-        margin-top: -40%;
+        margin-top: -40rem;
         width: 80%;
         z-index: 5;
     }
@@ -167,15 +150,15 @@ and (min-device-width: 737px) {
     #login-helper {
         display: block;
         margin: 0 auto;
-        font-size: 1.25rem;
-        background: #768276;
+        font-size: 1rem;
+        color: #B9CCB8;
+        background: #7D516D;
         width: 15rem;
         text-align: center;
         padding: .5rem;
         border-radius: 10px;
         margin-top: -10px;
         z-index: -2;
-        font-size: .75rem;
     }
 
     .bnext {
@@ -191,37 +174,38 @@ and (min-device-width: 737px) {
         margin-top: 20px;
         border-radius: 5px;
         font-size: 1rem;
+        box-shadow: .25rem .25rem .25rem #888888;
     }
 
-    .bnext:after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 0%;
-        border-bottom: 2px solid #3366FF;
-        transition: 0.4s;
-    }
     .bnext:hover {
-        cursor: pointer;
-        cursor: hand;
+        box-shadow: .5rem .5rem .5rem #888888;
     }
 
-    .bnext:hover:after {
-        width: 100%;
-      }
+    .bnext:active {
+        box-shadow: .25rem .25rem .25rem #888888;
+    }
 
     #attending-check {
         background-color: #B9CCB8;
         align-items: center;
+        margin-top: -45rem;
     }
 
     #submit{
+        box-shadow: .25rem .25rem .25rem #888888;
         height: 3rem;
         background:#7D516D;
         color:#B9CCB8;
         border:none;
         font-size:1em;
+    }
+
+    #submit:hover {
+        box-shadow: .5rem .5rem .5rem #888888;
+    }
+
+    #submit:active {
+        box-shadow: .25rem .25rem .25rem #888888;
     }
 
     #song-box {

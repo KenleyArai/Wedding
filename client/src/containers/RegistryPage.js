@@ -16,21 +16,6 @@ export default class Registry extends Component {
           <MediaQuery minWidth={961}>
                 <IronImg srcPreload={image} srcLoaded={hdRsvpPageURL} />
           </MediaQuery>
-          <div id='registry-container'>
-            <div id='registry-box'>
-              <div id='registry-header'>
-                For us…
-              </div>
-              <RegistryBox title={'Amazon'} link={'https://amazon.com'}/>
-              <RegistryBox title={'Bed, Bath, and Beyond'} link={'https://www.bedbathandbeyond.com/'}/>
-            </div>
-            <div id='registry-box'>
-              <div id='registry-header'>
-                For a good cause…
-              </div>
-              <RegistryBox title={'ACLU'} link={'https://action.aclu.org/secure/make-gift-aclu-honor-someone-special'}/>
-            </div>
-          </div>
         </div>
     );
   }

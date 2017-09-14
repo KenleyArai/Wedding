@@ -21,5 +21,6 @@ and (min-device-width: 737px) {
         margin: 0 auto;
         border-radius: 3px;
         padding: 1rem;
+        font-size: 2rem;
     }
 }
