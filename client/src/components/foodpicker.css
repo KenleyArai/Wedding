@@ -76,5 +76,6 @@ and (min-device-width: 737px) {
     .food-header {
         vertical-align: middle;
         margin: auto 1.5em;
+        font-size: 3rem;
     }
 }

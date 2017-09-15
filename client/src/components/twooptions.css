@@ -52,8 +52,26 @@ and (min-device-width: 737px) {
         display: flex;
         flex-direction: column;
     }
+    .two-cell {
+        padding: .25rem;
+        font-size: 2rem;
+        box-shadow: .25rem .25rem .25rem #888888;
+    }
+
+    .two-cell:hover{
+        box-shadow: .5rem .5rem .5rem #888888;
+    }
+
+    .two-cell:active {
+        box-shadow: .1rem .1rem .1rem #888888;
+    }
 
     .two-options:hover {
+        cursor: pointer;
+        cursor: hand;
+    }
+
+    .two-options:active {
         cursor: pointer;
         cursor: hand;
     }
