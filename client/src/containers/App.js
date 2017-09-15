@@ -1,9 +1,8 @@
 import React from 'react'
 import {
-  BrowserRouter as Router,
-  Route
+  BrowserRouter as Router
 } from 'react-router-dom'
-
+import { Switch, Route } from 'react-router-dom'
 import MediaQuery from 'react-responsive';
 
 import './App.css';
@@ -19,13 +18,15 @@ export default class App extends React.Component {
     render() {
         return (
           <Router>
-            <div>
-              <Navbar logo={ <span id='nav-logo'>K &amp; L</span>} />
+          <div>
+            <Navbar logo={ <span id='nav-logo'>K &amp; L</span>} />
+            <Switch>
               <Route exact path="/" component={HomePage}/>
               <Route exact path="/RSVP" component={RsvpPage} />
               <Route exact path="/Registry" component={RegistryPage}/>
               <Route exact path="/Dates" component={DatesPage}/>
               <Route exact path="/Logistics" component={LogisticsPage}/>
+            </Switch>
             </div>
           </Router>
           );
