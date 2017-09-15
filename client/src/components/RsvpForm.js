@@ -10,7 +10,7 @@ export default class RsvpForm extends Component {
 
   constructor() {
       super();
-      this.state = { attending_state: true, auth_token: '', name: '', password: '', song_state: false, invitee: undefined, is_correct_party: 0, food_choices: false, done: false, go_next:false, group:false};
+      this.state = { req: false, attending_state: true, auth_token: '', name: '', password: '', song_state: false, invitee: undefined, is_correct_party: 0, food_choices: false, done: false, go_next:false, group:false};
 
       this.nameChange = this.nameChange.bind(this);
       this.passwordChange = this.passwordChange.bind(this);
@@ -81,6 +81,7 @@ export default class RsvpForm extends Component {
   }
 
   handleSubmit(event){
+        this.setState({req: true});
         const credentials = {
           name: this.toTitleCase(this.state.name),
           password: this.state.password
@@ -97,6 +98,7 @@ export default class RsvpForm extends Component {
         fetch(request)
         .then((resp) => resp.ok ? resp.json() : { auth_token: undefined, status: 'rejected' })
         .then((data) => this.setState((prevState, props) => ({ auth_token: data['auth_token'], status: data['status']})))
+        .then(() => this.setState({req: false}))
 
         event.preventDefault();
   }
@@ -138,7 +140,7 @@ export default class RsvpForm extends Component {
             placeholder={'...'} />
             <div id='login-helper'><i className="fa fa-question-circle" aria-hidden="true"></i>Your passcode is on your invitation!</div>
         <button id='submit' className='bnext' type="submit" value="Submit">
-              Submit  <i className="fa fa-arrow-circle-right" aria-hidden="true"></i>
+              { this.state.req ? <i className="fa fa-refresh fa-spin fa-3x fa-fw"></i>  : <span>Submit <i className="fa fa-arrow-circle-right" aria-hidden="true"></i></span> }
           </button>
       </div>
     ) 
