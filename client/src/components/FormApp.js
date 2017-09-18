@@ -48,7 +48,7 @@ export default class FormApp extends React.Component {
     componentDidMount() {
         this.timerID = setInterval(
           () => this.tick(),
-            5000
+            250
         );
       }
 
