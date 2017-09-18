@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import RSVPForm from 'components/RsvpForm';
+
 import './rsvppage.css';
+
+import FormApp from 'components/FormApp';
 
 import MediaQuery from 'react-responsive';
 import IronImg from 'components/IronImg';
@@ -16,7 +18,7 @@ export default class RSVP extends Component {
           <MediaQuery minWidth={961}>
                 <IronImg srcPreload={image} srcLoaded={hdRsvpPageURL} />
           </MediaQuery>
-           <RSVPForm api="/invitees" /> 
+          <FormApp />
       </div>
     );
   }

@@ -19,8 +19,9 @@
 }
 
 .iron-image-loaded {
-  position: absolute;
+  position: fixed;
   max-width: 100vw;
+  margin-top: 3rem;
   height:auto;
   width:auto;
   max-height:100vh;

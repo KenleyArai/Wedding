@@ -1,0 +1,51 @@
+/* Mobile Styles */
+@media only screen
+and (max-device-width: 736px)  {
+    #food-state-container {
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .food-box {
+        display: flex;
+        flex-direction: column;
+        text-shadow:0 0 1px transparent;
+        color: #B9CCB8;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: .25rem;
+        margin-bottom: .25rem;
+    }
+
+    .food-name {
+        font-size: 1.5rem;
+    }
+}
+
+/* Desktop Styles */
+@media screen
+and (min-device-width: 737px)  {
+    #food-state-container {
+        display: flex;
+        margin: 0 auto;
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .food-box {
+        display: flex;
+        flex-direction: column;
+        text-shadow:0 0 1px transparent;
+        color: #B9CCB8;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        margin-top: .25rem;
+        margin-bottom: .25rem;
+    }
+
+    .food-name {
+        font-size: 1.5rem;
+    }
+}

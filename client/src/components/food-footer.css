@@ -1,0 +1,21 @@
+/* Mobile Styles */
+@media only screen
+and (max-device-width: 736px)  {
+    #food-footer {
+        display: flex;
+        justify-content: space-around;
+        width: 35rem;
+        margin: 0 auto;
+    }
+}
+
+/* Desktop Styles */
+@media screen
+and (min-device-width: 737px)  {
+    #food-footer {
+        display: flex;
+        justify-content: space-around;
+        width: 35rem;
+        margin: 0 auto;
+    }
+}

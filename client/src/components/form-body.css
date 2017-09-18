@@ -1,0 +1,23 @@
+/* Mobile Styles */
+@media only screen 
+and (max-device-width: 736px)  { 
+    .bye-container {
+        width: 80%;
+        margin: 0 auto;
+        color: #B9CCB8;
+        font-size: 2rem;
+        text-align: center;
+    }
+}
+
+/* Desktop Styles */
+@media screen 
+and (min-device-width: 737px)  {
+    .bye-container {
+        width: 80%;
+        margin: 0 auto;
+        color: #B9CCB8;
+        font-size: 2rem;
+        text-align: center;
+    }
+}

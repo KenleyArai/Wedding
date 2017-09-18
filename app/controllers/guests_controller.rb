@@ -39,7 +39,7 @@ class GuestsController < ApplicationController
 
     def set_entree
       @guest = Guest.find(params[:id])
-      if params[:entree] == 'Steak' or params[:entree] == 'Salmon' and @current_guest.gid == @guest.gid
+      if params[:entree] == 'steak' or params[:entree] == 'salmon' and @current_guest.gid == @guest.gid
         @guest.update_attributes(guest_params)
         @guest.save!
       end
@@ -57,7 +57,7 @@ class GuestsController < ApplicationController
 
     def set_cake
       @guest = Guest.find(params[:id])
-      if params[:dessert] == 'Carrot Cake' or params[:dessert] == 'Chocolate Cake' and @current_guest.gid == @guest.gid
+      if (params[:dessert] == 'carrot' or params[:dessert] == 'chocolate' or params[:dessert] == 'lemon-lime' or params[:dessert] == '7-layer') and @current_guest.gid == @guest.gid
         @guest.update_attributes(guest_params)
         @guest.save!
       end

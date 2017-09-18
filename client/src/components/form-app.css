@@ -1,0 +1,34 @@
+/* Mobile Styles */
+
+@media only screen and (max-device-width: 736px) {
+  #form-state-container {
+    box-sizing: border-box;
+    padding: 2rem 0;
+    margin: 0 auto;
+    background-color: hsl(322, 21%, 40%);
+    width: 80%;
+    margin-top: 40rem;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  }
+}
+
+
+/* Desktop Styles */
+
+@media screen and (min-device-width: 737px) {
+  #form-app {
+    margin: 0 auto;
+    z-index: 2;
+    position: absolute;
+  }
+  #form-state-container {
+    box-sizing: border-box;
+    padding: 2rem 0;
+    margin: 0 auto;
+    background-color: hsl(322, 21%, 40%);
+    width: 80%;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.12), 0 8px 8px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25, .8, .25, 1);
+  }
+}

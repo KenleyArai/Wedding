@@ -1,0 +1,200 @@
+input, button, submit { border:none !important;} 
+input:focus, button:focus, submit { border:none !important; } 
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+input.middle:focus {
+  outline-width: 0;
+}
+
+/* Mobile Styles */
+@media only screen 
+and (max-device-width: 736px)  { 
+    #login-state {
+      display: flex;
+      flex-direction: column;
+    }
+    .login-label {
+        width: 80%;
+        margin-left: 2.5rem;
+        font-size: 1.75rem;
+        color: hsl(117, 16%, 76%);
+        text-shadow:0 0 1px transparent;
+      }
+    
+      .login-helper {
+        position: absolute;
+        font-size: 1rem;
+        margin: 0 auto;
+        margin-top: 3.25rem;
+        width: 80%;
+        color: hsl(322, 21%, 40%);
+        background-color: hsl(117, 16%, 76%);
+        padding: .75rem;
+        text-align: left;
+        border-radius: 2px;
+        z-index: 1;
+        box-shadow: 0 8px 8px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+      }
+
+      .login-helper-child {
+        position: absolute;
+        font-size: .25rem;
+        margin: 0 auto;
+        margin-top: 7rem;
+        width: 80%;
+        color: hsl(322, 21%, 40%);
+        background-color: hsl(117, 16%, 76%);
+        padding: .75rem;
+        text-align: left;
+        border-radius: 2px;
+        z-index: 0;
+        box-shadow: 0 8px 8px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+      }
+
+      .login-helper-child img {
+        width: 1.25rem;
+      }
+      .login-helper img {
+        width: 1.25rem;
+      }
+
+      #fullname {
+        margin-bottom: 7rem;
+      }
+  
+      #password {
+        margin-bottom: 7rem;
+      }
+    
+      .form-input {
+        position: absolute;
+        z-index: 2;
+        font-size: 2rem;
+        display: flex;
+        width: 80%;
+        margin: 0 auto;
+        box-shadow: 0 8px 8px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.24);
+        transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+      }
+    
+      .sider {
+        flex: 1;
+        width: 4rem;
+        margin: auto 0;
+        color: hsl(322, 21%, 40%);
+        background-color: hsl(117, 16%, 76%);
+      }
+    
+      .sider img {
+        width: 3rem;
+        padding: .5rem;
+      }
+    
+      input.fm {
+        flex: 9;
+        font-size: 1.5rem;
+        width: 100%;
+      }
+    
+}
+
+/* Desktop Styles */
+@media screen 
+and (min-device-width: 737px)  { 
+  #login-state {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+  }
+  .login-label {
+      width: 80%;
+      margin-left: 2.5rem;
+      font-size: 1.75rem;
+      color: hsl(117, 16%, 76%);
+      text-shadow:0 0 1px transparent;
+    }
+  
+    .login-helper {
+      position: absolute;
+      font-size: 1rem;
+      margin: 0 auto;
+      margin-top: 3.25rem;
+      width: 78%;
+      color: hsl(322, 21%, 40%);
+      background-color: hsl(117, 16%, 76%);
+      padding: .75rem;
+      text-align: left;
+      border-radius: 2px;
+      z-index: 1;
+      box-shadow: 0 8px 8px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+
+    .login-helper-child {
+      position: absolute;
+      font-size: 1rem;
+      margin: 0 auto;
+      margin-top: 6rem;
+      width: 78%;
+      color: hsl(322, 21%, 40%);
+      background-color: hsl(117, 16%, 76%);
+      padding: .75rem;
+      text-align: left;
+      border-radius: 2px;
+      z-index: 0;
+      box-shadow: 0 8px 8px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+
+    .login-helper-child img {
+      width: 1.25rem;
+    }
+    .login-helper img {
+      width: 1.25rem;
+    }
+
+    #fullname {
+      margin-bottom: 7rem;
+    }
+
+    #password {
+      margin-bottom: 7rem;
+    }
+  
+    .form-input {
+      position: absolute;
+      z-index: 2;
+      font-size: 2rem;
+      display: flex;
+      width: 78%;
+      margin: 0 auto;
+      box-shadow: 0 8px 8px rgba(0,0,0,0.12), 0 8px 8px rgba(0,0,0,0.24);
+      transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+    }
+  
+    .sider {
+      flex: 1;
+      width: 4rem;
+      margin: auto 0;
+      color: hsl(322, 21%, 40%);
+      background-color: hsl(117, 16%, 76%);
+    }
+  
+    .sider img {
+      width: 3rem;
+      padding: .5rem;
+    }
+  
+    input.fm {
+      flex: 9;
+      font-size: 1.5rem;
+      width: 100%;
+    }
+}

@@ -19,8 +19,13 @@ and (-webkit-min-device-pixel-ratio: 3) {
 @media screen 
 and (min-device-width: 737px)  { 
     #rsvp-page {
+        position: absolute;
         width: 100%;
         height: 100%;
-        position: absolute;
+        z-index: 0;
+        align-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
     }
 }
