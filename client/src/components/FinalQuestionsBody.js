@@ -15,13 +15,13 @@ export default class FinalQuestionsBody extends React.Component {
                                     </div>
                                     <div className="lq-body">
                                         <div className="allergies">
-                                            Allergies?
+                                            ... have any allergies?
                                         </div>
                                         <input placeholder={attendee.allergy} onChange={(e) => this.props.questions_handler(attendee.id, 'allergy', e.target.value) } className="allergies-input" type="text" />
                                         <div className="song-request">
-                                            A song request?
+                                            ... have a song request?
                                         </div>
-                                        <input placeholder={attendee.song_request} className="sq-input" type="text" />
+                                        <input placeholder={attendee.song_request} onChange={(e) => this.props.questions_handler(attendee.id, 'song_request', e.target.value) } className="sq-input" type="text" />
                                     </div>
                                 </div>)
                         )

@@ -1,10 +1,12 @@
 {
-  "main.css": "static/css/main.2acce38e.css",
-  "main.css.map": "static/css/main.2acce38e.css.map",
-  "main.js": "static/js/main.04d1fe83.js",
-  "main.js.map": "static/js/main.04d1fe83.js.map",
-  "static/media/dates.jpg": "static/media/dates.cbe5f036.jpg",
-  "static/media/home.jpg": "static/media/home.4ee1eed6.jpg",
-  "static/media/registry.jpg": "static/media/registry.ba17109f.jpg",
-  "static/media/rsvp.jpg": "static/media/rsvp.35a6fffc.jpg"
+  "main.css": "static/css/main.4a5d1f03.css",
+  "main.css.map": "static/css/main.4a5d1f03.css.map",
+  "main.js": "static/js/main.e0ffb44a.js",
+  "main.js.map": "static/js/main.e0ffb44a.js.map",
+  "static/media/arrow-alt-circle-right.svg": "static/media/arrow-alt-circle-right.168969a0.svg",
+  "static/media/calendar-check.svg": "static/media/calendar-check.dd8f4114.svg",
+  "static/media/calendar-times.svg": "static/media/calendar-times.b47d593c.svg",
+  "static/media/lock-alt.svg": "static/media/lock-alt.d6e4afdf.svg",
+  "static/media/question-circle.svg": "static/media/question-circle.cd1959dd.svg",
+  "static/media/user-circle.svg": "static/media/user-circle.e3e0656f.svg"
 }
