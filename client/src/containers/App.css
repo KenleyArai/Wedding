@@ -33,21 +33,11 @@ body {
 
 /* Mobile Styles */
 @media only screen 
-and (min-device-width: 414px) 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3) { 
+and (max-device-width: 736px)  { 
     #nav-logo {
       display: none;
     }
     body {
       background-color: #B9CCB8;
     }
-}
-
-/* Desktop Styles */
-@media screen 
-and (min-device-width: 737px) 
-and (max-device-width: 1600px) 
-and (-webkit-min-device-pixel-ratio: 1) { 
-
 }

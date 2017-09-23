@@ -8,8 +8,7 @@
 
 /* Mobile Styles */
 @media only screen 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3) { 
+and (max-device-width: 736px)  { 
     #rsvp-form {
         background-color: #B9CCB8;
         width: 100%;

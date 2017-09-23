@@ -44,7 +44,7 @@ and (max-device-width: 736px)  {
 
       .login-helper-child {
         position: absolute;
-        font-size: .25rem;
+        font-size: 1rem;
         margin: 0 auto;
         margin-top: 7rem;
         width: 80%;
