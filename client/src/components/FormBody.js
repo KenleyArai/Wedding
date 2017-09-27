@@ -22,7 +22,11 @@ export default class FormBody extends React.Component {
             case 'bye':
                 return (
                     <div className="bye-container">
-                        See you on Oct 20th!
+                        We are excited to see:
+                        {
+                            this.props.group.map((member) => <div>{member.name}</div>)
+                        }
+                         on Oct 20th!
                     </div>
                 );
             default:
