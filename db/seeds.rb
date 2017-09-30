@@ -12,7 +12,6 @@ csv_text = File.read(Rails.root.join('lib', 'seeds', 'guests.csv'))
 csv = CSV.parse(csv_text, :headers => true, :encoding => 'ISO-8859-1')
 
 csv.each do |row|
-
     name = row['Firstname'].capitalize
 
     if row['Lastname']
@@ -22,12 +21,12 @@ csv.each do |row|
     guest = Guest.new(
         :name                   => name,
         :password               => row['password'],
-        :password_confirmation  => row['password_confirmation'],
+        :password_confirmation  => row['password'],
         :gid                    => row['Group'],
-        :is_kid                 => row['Is_kid'],
+        :is_kid                 => 'no',
         :attending              => 'unknown',
-        :song_request           => 'Do they have a song request?',
-        :allergy                => 'Do they have have any food allergies or dietary restrictions?'
+        :song_request           => '',
+        :allergy                => ''
     )
     guest.save!
 end

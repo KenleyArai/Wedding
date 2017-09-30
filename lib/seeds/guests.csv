@@ -1,72 +1,11 @@
-password,password _confirmation,Is_kid,Firstname,Lastname,Group
-GCBPW,GCBPW,no,Isis,Press,1
-GCBPW,GCBPW,no,Evan,Press,1
-GCBPW,GCBPW,no,Sarah,Press,1
-GCBPW,GCBPW,no,Kenny,Jenkins,1
-GCBPW,GCBPW,yes,Hailey,Jenkins,1
-GCBPW,GCBPW,yes,Ayden,Jenkins,1
-PCBGW,PCBGW,no,Kathy,Arai,2
-PCBGW,PCBGW,no,Victor,Arai,2
-PCBGW,PCBGW,no,Luke,Rideout,2
-PWCBG,PWCBG,no,Ben,Arai,3
-PWCBG,PWCBG,no,Corrie,Arai,3
-PWCBG,PWCBG,yes,Charlotte,Arai,3
-PWCBG,PWCBG,yes,Penelope,Arai,3
-CGBWP,CGBWP,no,Geoff,Arai,4
-CGBWP,CGBWP,no,Crystal,Arai,4
-CGBWP,CGBWP,yes,Jace,Arai,4
-CGBWP,CGBWP,yes,Ethan,Arai,4
-CGBWP,CGBWP,yes,Abigail,Arai,4
-BWGCP,BWGCP,no,Glenn,Arai,5
-BWGCP,BWGCP,no,Mila,Arai,5
-CWPBG,CWPBG,no,Madelon,Yamamoto,6
-BWGPC,BWGPC,no,Aki,Arai,7
-BWGPC,BWGPC,no,Sachi,Arai,7
-BWPCG,BWPCG,no,Beth,Terris,8
-BWPCG,BWPCG,no,Garrett,Thoelen,8
-WGPCB,WGPCB,no,Antoine,Guerrero,9
-WGPCB,WGPCB,no,Antoine's wife,Guerrero,9
-WGPCB,WGPCB,yes,1 child,Guerrero,9
-CBGWP,CBGWP,no,Yolanda,Inoa,10
-BGWPC,BGWPC,no,Eric,Denning,11
-BGWPC,BGWPC,no,Jenna,Denning,11
-BGWPC,BGWPC,no,Zander,Denning,11
-BGWPC,BGWPC,yes,Julia,Denning,11
-PGWBC,PGWBC,no,Aliza,First,12
-PGWBC,PGWBC,no,Rich,First,12
-PGWBC,PGWBC,no,Asher,First,12
-PGWBC,PGWBC,no,Max,First,12
-CWPBG,CWPBG,no,Sue,Shulman,13
-CWPBG,CWPBG,no,Aunt Sue + 1,,13
-BWPGC,BWPGC,no,Kim,Arnold,14
-PGWBC,PGWBC,no,Tom,O'hara,15
-PGWBC,PGWBC,no,Mary Ann,O'hara,15
-GBWPC,GBWPC,no,Aunt Kathy,O'hara,16
-GBPWC,GBPWC,no,Auntie Jane,Wada,17
-GBPWC,GBPWC,no,Uncle Jerry,Wada,17
-BCWGP,BCWGP,no,Tom,Tatsui,18
-BCWGP,BCWGP,no,Sue,Tatsui,18
-PGCWB,PGCWB,no,Arthur,LaCerte's,19
-PGCWB,PGCWB,no,Susan,LaCerte's,19
-PBWCG,PBWCG,no,Kelly,Tabata,20
-PBWCG,PBWCG,no,Dylan,Tabata,20
-PBWCG,PBWCG,no,Ashlyn,Tabata,20
-GWBPC,GWBPC,no,Michael,Arai,21
-GWBPC,GWBPC,no,Rose,Arai,21
-PGWCB,PGWCB,no,Tod,Yamamoto,22
-PGWCB,PGWCB,no,Karen,Yamamoto,22
-PGWCB,PGWCB,no,Tyler,Yamamoto,22
-GCPBW,GCPBW,no,Karen,Yamamoto,23
-GCPBW,GCPBW,no,Bill,Biggs ,23
-PWGCB,PWGCB,no,Paige,Richmond,24
-PWGCB,PWGCB,no,Justin,Richmond,24
-GCWPB,GCWPB,no,Paul,Zak,25
-GCWPB,GCWPB,no,Lori,Zak,25
-GCWPB,GCWPB,no,Alex,Zak,25
-GCWPB,GCWPB,no,Elkie (sp?),Zak,25
-CGWPB,CGWPB,no,Jorge,Barraza,26
-CGWPB,CGWPB,no,Emily,Barraza,26
-CGWPB,CGWPB,no,Carolina,Barraza,26
-CGWPB,CGWPB,no,Eli,Barraza,26
-CGWPB,CGWPB,no,Elena,Barraza,26
-CGWPB,CGWPB,no,Sonia,Barraza,26
+password,Group,Firstname,Lastname
+PGWBC,51,Ellen,Torres
+PGWBC,51,Ed,Torres
+PGWBC,50,Eric,Lacey
+PGWBC,50,Grace,Lacey
+CWPGB,51,Claudia,Lewis
+WPGCB,52,Mike,Phillips
+WPGCB,52,Marlene,Phillips
+PGBCW,53,Christina,Malone
+PGBCW,53,Mike,Tyson
+PGBCW,53,Julie,Malone
