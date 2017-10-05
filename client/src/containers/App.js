@@ -22,10 +22,10 @@ export default class App extends React.Component {
             <Navbar logo={ <span id='nav-logo'>K &amp; L</span>} />
             <Switch>
               <Route exact path="/" component={HomePage}/>
-              <Route exact path="/RSVP" component={RsvpPage} />
-              <Route exact path="/Registry" component={RegistryPage}/>
-              <Route exact path="/Dates" component={DatesPage}/>
-              <Route exact path="/Logistics" component={LogisticsPage}/>
+              <Route path="/rsvp" component={RsvpPage} />
+              <Route path="/registry" component={RegistryPage}/>
+              <Route path="/dates" component={DatesPage}/>
+              <Route path="/logistics" component={LogisticsPage}/>
             </Switch>
             </div>
           </Router>

@@ -8,6 +8,7 @@
   #nav-bar {
     margin-left: -4rem;
     height: 6em;
+    background-color: rgba(185,204,184, 1);
   }
   .menu-link {
     padding: .25rem;

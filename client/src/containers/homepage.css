@@ -1,6 +1,5 @@
 /* Mobile Styles */
-@media only screen 
-and (max-device-width: 736px)  { 
+@media only screen and (max-device-width: 961px)  { 
   #home-page {
       background-image: none;
       background-color: #B9CCB8;

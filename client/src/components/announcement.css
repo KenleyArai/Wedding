@@ -1,6 +1,7 @@
 /* Mobile Styles */
 @media only screen and (max-width: 960px) {
     #announcement-container {
+        background-color: rgba(185,204,184, 1);
         position: absolute;
         display: flex;
         width: 100%;

@@ -4,6 +4,7 @@ import moment from 'moment';
 
 import './datespage.css'; 
 import events from './events';
+import Events from 'components/Events';
 
 
 import IronImg from 'components/IronImg';
@@ -17,21 +18,10 @@ export default class DatesPage extends Component {
     render() {
         return (
             <div id='dates-page'>
-            <MediaQuery minWidth={961}>
-                <IronImg srcPreload={image} srcLoaded={hdHomePageURL} />
-            </MediaQuery>
-                <div id='dates-container'>
-                    <div id='calendar-month'>October</div>
-                    <div id='calendar-container'>
-                        <BigCalendar
-                            {...this.props}
-                            events={events}
-                            defaultDate={new Date(2017, 9,20)}
-                            selectable={'ignoreEvents'}
-                            toolbar={false}
-                        />
-                    </div>
-                </div>
+                <MediaQuery minWidth={961}>
+                    <IronImg srcPreload={image} srcLoaded={hdHomePageURL} />
+                </MediaQuery>
+                <Events events={events} />
             </div>
         );
     }
