@@ -20,7 +20,7 @@ export default[
   }, {
     'multi-event' : 0,
     'title' : 'Wedding',
-    'date' : new Date(2017, 9, 6, 17, 30),
+    'date' : new Date(2017, 9, 6, 17),
     'body' : 'Descanso Gardens',
     'address' : '1418 Descanso Dr, La Cañada Flintridge, CA 91011'
   }
